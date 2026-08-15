@@ -4,47 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #main{
+            width:60px;
+            height:150px;
+            border: 2px solid black;
+            display:flex;
+            justify-content:space-evenly;
+            flex-direction:column;
+            align-items:center;
+            
+            background-color: black;
+            
+
+
+        }
+        .sub{
+            width:32px;
+            height:32px;
+            border:2px solid black;
+            border-radius:100px;
+            background-color: white;
+        }
+        #box4{
+            width:100px;
+            height:100px;
+            background-color:black;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+
+
+        }
+        #box5{
+            width:80px;
+            height:80px;
+            background-color:white;
+            border-radius:50px;
+        }
+
+    </style>
 </head>
 <body>
-    <center>
-    <table border="1" cellspacing="5px" cellpadding="5px">
-        <tr>
-            <th colspan=3>FOOD MENU</th>
-            
-        </tr>
-        <tr>
-            <td><a href=https://www.indianhealthyrecipes.com/chicken-biryani-recipe target="_blank">
-                 <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg " alt="Biryani"  height="100px"  width="100px"/> 
-            </a>
-            </td>
-            <td><a href="https://www.indianhealthyrecipes.com/garlic-chicken/" target="_blank">
-                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_940,h_788/https://thetakeiteasychef.com/wp-content/uploads/2019/06/Garlic-Chicken-F.jpg" alt="Garlic chicken" heigth="100px" width="100px /">
-                </a></td>
-            <td>
-                <a href="https://www.indianhealthyrecipes.com/fish-fry-recipe/" target="_blank">
-                    <img src="https://www.relishthebite.com/wp-content/uploads/2017/07/fishfry-3.jpg" alt="Fish fry" heigth="100px" width="100px" />
-                    </a>
-                    </td>
-            </tr>
-        <tr>
-            <td>
-                <a href="https://www.sokoskitchen.com/all-recipes/homemade-coca-cola" target="_blank">
-                    <img src="https://spicecravings.com/wp-content/uploads/2022/06/Masala-Coke-1.jpg" alt="Coke" heigth="100px" width="100px" />
-                </a>
-            </td>
-            <td>
-                <a href="https://www.indianhealthyrecipes.com/ice-cream-recipe-no-ice-cream-maker/" target="_blank">
-                    <img src="https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2022/08/Ice-cream-sundae-hero-11.jpg" alt=""Ice cream" height="150px" width="100px" />
-               </a>
-            </td>
-            <td>
-                <a href="https://juliasalbum.com/korean-bbq-chicken/" target="_blank">
-            <img src="https://media.chefdehome.com/740/0/0/bbq/korean-bbq-chicken.jpg" alt="Chicken BBQ" heigth="100px" width="100px" />
-                </a>
-            </td>
-        </tr>
-    </table>
-</center>
+    <div id="main">
+        <div id="box1" class="sub"></div>
+        
+        <div id="box2" class="sub"></div>
+        
+        <div id="box3" class="sub"></div>
+        
+        
+        
 
+
+    </div>
+    <br>
+
+    <button onclick="red()"   id="button1" class="btn">RED</button>
+    <button onclick="orange()" id="button2" class="btn">ORANGE</button>
+    <button onclick="green()" id="button3" class="btn">GREEN</button>
+
+    
+
+
+ 
+
+<script>
+  
+   let box1=document.getElementById("box1");
+   let box2=document.getElementById("box2");
+   let box3=document.getElementById("box3");
+   function turnoff(){
+    box1.style.backgroundColor="white";
+    box2.style.backgroundColor="white";
+    box3.style.backgroundColor="white";
+   }
+
+   function red(){
+         turnoff();
+        box1.style.backgroundColor="red"
+    }
+    function orange(){
+        turnoff();
+        box2.style.backgroundColor="orange";
+
+    }
+   function green(){
+        turnoff();
+        box3.style.backgroundColor="green";
+   }
+
+
+   
+
+
+
+
+</script>
 </body>
 </html>
